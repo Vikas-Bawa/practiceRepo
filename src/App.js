@@ -1,23 +1,21 @@
 import logo from './logo.svg';
 import './App.css';
+import UseReducer from './components/UseReducer';
+import User from './components/User';
+import HomeContainer from './containers/HomeContainer';
+import HeaderContainer from './containers/HeaderContainer';
 
 function App() {
+  const person = {
+    name: 'Aditya',
+    age: 34
+  }
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+        {/* <UseReducer/> */}
+        {/* <User obj={person}/> */}
+        <HeaderContainer/>
+        <HomeContainer/>
     </div>
   );
 }
